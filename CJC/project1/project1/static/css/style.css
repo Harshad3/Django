@@ -1,0 +1,19 @@
+.abc {
+    background-color:cyan;
+    list-style-type:none;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+
+li {
+    float:right;
+}
+li a{
+    padding:15px 15px 15px 2px;
+    display:block;
+}
+
+li a:hover {
+    background-color:yellow;
+}

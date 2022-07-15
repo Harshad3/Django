@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+
+<h1>View </h1>
+<ul>
+    <li><a href="http://127.0.0.1:8000/app1">Home</a> </li>
+</ul>
+
+{% for i in li %}
+    <h1>{{i}}</h1>
+{% endfor %}
+
+<table border="2px">
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+    {% for i in li %}
+
+    <tr>
+        <td>{{ i.rn }}</td>
+        <td>{{ i.nm }}</td>
+        <td>{{ i.mk }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+</body>
+</html>
